@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arsh's 3d Game</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+</head>
+
+<body>
+    <a-scene inspector-plugin-recast>
+        <a-sky color="#87CEEB"></a-sky>
+        <a-plane id="ground" class="walkable" position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+        <a-box class="player" position="0 0 -8" depth="1" height="1" width="1" color="#4CC3D9"></a-box>
+        <a-box class="player" position="0 0 -2" depth="1" height="1" width="1" color="#4CC3D9"></a-box>
+        <a-box class="player" position="3 0 -5" depth="1" height="1" width="1" color="#4CC3D9"></a-box>
+        <a-box class="player" position="0 0 -5" depth="1" height="1" width="1" color="#4CC3D9"></a-box>
+        <a-camera position="0 2 0" wasd-controls="acceleration: 30" look-controls="enabled:true">
+            <a-cursor color="yellow"></a-cursor>
+        
+        </a-camera>
+    </a-scene>
+</body>
+
+</html>
